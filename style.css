@@ -1,0 +1,83 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 768px;
+  margin: 0 auto;
+  line-height:1.6;
+  font-size:18px;
+  color:#444;
+  padding: 0 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header p {
+  text-align: center;
+  display: block;
+}
+
+/* Everything below will need styling */
+
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.main-nav a {
+  font-size: .95em;
+  text-transform: uppercase;
+}
+
+.main-nav a:hover {
+  
+}
+
+.main-header {
+  
+}
+
+.main-nav {
+
+}
+
+@media (min-width: 769px) {
+
+  .main-header,
+  .main-nav {
+    display: flex;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-header {
+    margin: 0 auto;
+    max-width: 1150px;
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header p,
+  header h1 {
+    text-align: left;
+  }
+
+
+}
