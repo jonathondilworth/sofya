@@ -1,5 +1,6 @@
 /* CSS based on stylesheet from 'A Hyperminimal Jekyll Theme' */
 /* credit to Brent Jackson (http://jxnblk.com/) for base styles */
+/* for flex box example used here: http://tutorialzine.com/2016/03/quick-tip-the-best-way-to-make-sticky-footers/ */
 
 /* BASE */
 
@@ -22,41 +23,54 @@ a:hover { color: #069; }
 h1 a, h2 a { color: #333;}
 h1, h2, h3, h4, h5, h6 { line-height: 1.25; }
 
+.medium { font-size: 24px; }
 .small { font-size: 16px; }
 .gray { color: #999; }
+.white { color: #FFF; }
 
 /* LAYOUT */
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  max-width: 768px;
-  margin: 40px auto;
   line-height: 1.6;
   font-size: 18px;
   color: #444;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  max-width: 768px;
+  width: 90%;
   padding: 0px 5% 0px 5%;
+  margin: 40px auto;
+  flex: 1 0 auto;
 }
 
 /* site-desc */
 
-.main-header p {
-  text-align: center;
+.site-header {
+   flex: 0 0 auto;
 }
 
-.main-header h1 {
-  font-size: 24px;
+.description {
   text-align: center;
 }
 
 /* nav */
 
-.main-header ul {
+.site-header ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.main-header ul a {
+.site-header li a {
   text-align: center;
   display: block;
   padding: 10px 15px;
@@ -64,7 +78,44 @@ body {
   text-transform: uppercase;
 }
 
+/* footer */
+
+/* TODO: reconsider how footer is implemented */
+
+.site-footer {
+  display: flex;
+  background-color: #444;
+  padding: 1.5rem; 
+  flex: 0 0 auto;
+}
+
+.site-footer ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer li {
+  display: block;
+  padding: 0 5px;
+}
+
+.site-footer li img {
+  width: 20px;
+  height: auto;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.site-footer-container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
 /* MODULES */
+
+/* TODO: abstract out margin-bottom: 32; into it's own class */
 
 .post {
   margin-bottom: 32px;
@@ -83,16 +134,16 @@ body {
 
 @media (min-width: 220px) {
 
-  .main-header {
+  .site-header {
     margin: 0 auto;
   }
 
-  .main-header,
-  .main-header ul {
+  .site-header,
+  .site-header ul {
     display: flex;
   }
 
-  .main-header {
+  .site-header {
     flex-direction: column;
     align-items: center;
   }
@@ -101,19 +152,15 @@ body {
 
 @media (min-width: 660px) {
 
-  .main-header {
+  .site-header {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 32px;
   }
 
-  .main-header p,
-  .main-header h1 {
-    text-align: left;
-  }
-
   .description {
     flex-direction: column;
+    text-align: left;
   }
 
 }

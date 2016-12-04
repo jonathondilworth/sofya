@@ -11,35 +11,50 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 <body>
-  <header class="main-header">
-    <div class="description">
-      <h1 class="name"><a href="#">Jon's Blog</a></h1>
-      <p>Sample Description</p>
+  <div class="container">
+    <header class="site-header">
+      <div class="description">
+        <h1 class="medium"><a href="#">Jon's Blog</a></h1>
+        <p>Sample Description</p>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </header>
+    <main>
+      <article class="post">
+        <h2><a href="#">harambe, I miss you</a></h2>
+        <p>The sixteen million crazy goofuses of the Internet hopped on the very quick Harambe train, down the zoo track for their jollies. I just threw this one together, has all the letters! Can’t tell if banana for scale or you’re gonna have a bad time. HaramBAE. When does it end? Bananas out for Harambe. The sixteen million crazy goofuses of the Internet hopped on the very quick Harambe train, down the zoo track for their jollies.</p>
+        <p><a href="#">Read more »</a></p>
+      </article>
+      <article class="post">
+        <h2><a href="#">Uploading a large amount of files to Amazon S3 using s3cmd</a></h2>
+        <p>We recently ran into an issue where we needed to upload tens of thousands of files to various Amazon S3 buckets, as we’ve been migrating our entire hosting infrastructure over to AWS since it’s cheaper and generally easier to manage than our previous provider. Up until this point we had been using the Amazon AWS console to upload any files such as image assets, javascript files and css stylesheets - but tens of thousands of PDFs and other documents is a completely different kettle of fish.</p>
+        <p><a href="#">Read more »</a></p>
+      </article>
+      <article class="post">
+        <h2><a href="#">Post Title 3</a></h2>
+        <p>Summary Goes Here... 3</p>
+        <p><a href="#">Read more »</a></p>
+      </article>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="site-footer-container">
+      <ul>
+        <li><a href="#"><img src="social-media/svg/github-logo.svg"></a></li>
+        <li><a href="#"><img src="social-media/svg/twitter-logo.svg"></a></li>
+        <li><a href="#"><img src="social-media/svg/quora-logo.svg"></a></li>
+        <li><a href="#"><img src="social-media/svg/linkedin-logo.svg"></a></li>
+        <li><a href="#"><img src="social-media/svg/facebook-logo.svg"></a></li>
+        <li><a href="#"><img src="social-media/svg/dribbble-logo.svg"></a></li>
+        <li><a href="#"><img src="social-media/svg/youtube-logo.svg"></a></li>
+        <li><a href="#"><img src="social-media/svg/wordpress-logo.svg"></a></li>
+        <li><a href="#"><img src="social-media/svg/stack-overflow.svg"></a></li>
+      </ul>
     </div>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
-  </header>
-  <main>
-    <article class="post">
-      <h2><a href="#">harambe, I miss you</a></h2>
-      <p>The sixteen million crazy goofuses of the Internet hopped on the very quick Harambe train, down the zoo track for their jollies. I just threw this one together, has all the letters! Can’t tell if banana for scale or you’re gonna have a bad time. HaramBAE. When does it end? Bananas out for Harambe. The sixteen million crazy goofuses of the Internet hopped on the very quick Harambe train, down the zoo track for their jollies.</p>
-      <p><a href="#">Read more »</a></p>
-    </article>
-    <article class="post">
-      <h2><a href="#">Uploading a large amount of files to Amazon S3 using s3cmd</a></h2>
-      <p>We recently ran into an issue where we needed to upload tens of thousands of files to various Amazon S3 buckets, as we’ve been migrating our entire hosting infrastructure over to AWS since it’s cheaper and generally easier to manage than our previous provider. Up until this point we had been using the Amazon AWS console to upload any files such as image assets, javascript files and css stylesheets - but tens of thousands of PDFs and other documents is a completely different kettle of fish./p>
-      <p><a href="#">Read more »</a></p>
-    </article>
-    <article class="post">
-      <h2><a href="#">Post Title 3</a></h2>
-      <p>Summary Goes Here... 3</p>
-      <p><a href="#">Read more »</a></p>
-    </article>
-  </main>
-  <footer>
   </footer>
 </body>
 </html>
