@@ -1,8 +1,8 @@
 {{ partial "header.html" . }}
   <main>
-    {{ range .Data.Pages }}
+    {{ range where .Data.Pages "Type" "post" }}
     <article class="post">
-    <h2><a href="{{ .Permalink }}">{ .Title }}</a></h2>
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <p>{{ .Summary }}</p>
     <p><a href="{{ .Permalink }}">Read more »</a></p>
     </article>

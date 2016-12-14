@@ -82,10 +82,17 @@ body {
 
 /* TODO: reconsider how footer is implemented */
 
+.site-footer-container {
+  max-width: 768px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .site-footer {
   display: flex;
   background-color: #444;
-  padding: 1.5rem; 
+  padding: 1.0rem; 
   flex: 0 0 auto;
 }
 
@@ -108,11 +115,6 @@ body {
   filter: invert(100%);
 }
 
-.site-footer-container {
-  max-width: 768px;
-  margin: 0 auto;
-}
-
 /* MODULES */
 
 /* TODO: abstract out margin-bottom: 32; into it's own class */
@@ -130,37 +132,17 @@ body {
   margin-bottom: 16px;
 }
 
-/* RESPONSIVE */
+/* ABOUT */
 
-@media (min-width: 220px) {
-
-  .site-header {
-    margin: 0 auto;
-  }
-
-  .site-header,
-  .site-header ul {
-    display: flex;
-  }
-
-  .site-header {
-    flex-direction: column;
-    align-items: center;
-  }
-
+.profile-photo {
+  display: block;
+  max-width: 190px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
 }
 
-@media (min-width: 660px) {
-
-  .site-header {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 32px;
-  }
-
-  .description {
-    flex-direction: column;
-    text-align: left;
-  }
-
+.about-text {
+  text-align: center;
+  font-size: 22px;
+  margin: 5px 0;
 }

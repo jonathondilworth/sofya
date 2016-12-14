@@ -1,21 +1,20 @@
 </div>
   <footer class="site-footer">
     <div class="site-footer-container">
-      <!-- IF social media icons set -->
       <ul>
-        <li><a href="#"><img src="social-media/svg/github-logo.svg"></a></li>
-        <li><a href="#"><img src="social-media/svg/twitter-logo.svg"></a></li>
-        <li><a href="#"><img src="social-media/svg/quora-logo.svg"></a></li>
-        <li><a href="#"><img src="social-media/svg/linkedin-logo.svg"></a></li>
-        <li><a href="#"><img src="social-media/svg/facebook-logo.svg"></a></li>
-        <li><a href="#"><img src="social-media/svg/dribbble-logo.svg"></a></li>
-        <li><a href="#"><img src="social-media/svg/youtube-logo.svg"></a></li>
-        <li><a href="#"><img src="social-media/svg/wordpress-logo.svg"></a></li>
-        <li><a href="#"><img src="social-media/svg/stack-overflow.svg"></a></li>
+        {{ if isset .Site.Params "linkedin" }}
+        <li><a href="{{ .Site.Params.linkedin }}"><img src="{{ .Site.BaseURL }}img/linkedin-logo.svg"></a></li> {{ end }}
+        {{ if isset .Site.Params "github" }}
+        <li><a href="{{ .Site.Params.github }}"><img src="{{ .Site.BaseURL }}img/github-logo.svg"></a></li> {{ end }}
+        {{ if isset .Site.Params "twitter" }}
+        <li><a href='{{ .Site.Params.twitter }}'><img src="{{ .Site.BaseURL }}img/twitter-logo.svg"></a></li> {{ end }}
+        {{ if isset .Site.Params "quora" }}
+        <li><a href="{{ .Site.Params.quora }}"><img src="{{ .Site.BaseURL }}img/quora-logo.svg"></a></li> {{ end }}
+        {{ if isset .Site.Params "stackoverflow" }}
+        <li><a href="{{ .Site.Params.stackoverflow }}"><img src="{{ .Site.BaseURL }}img/stack-overflow.svg"></a></li> {{ end }}
+        {{ if isset .Site.Params "facebook" }}
+        <li><a href="{{ .Site.Params.facebook }}"><img src="{{ .Site.BaseURL }}img/facebook-logo.svg"></a></li> {{ end }}
       </ul>
-      <!-- else if footer copy is set -->
-      <p class="small white">&copy; 2016 John Doe</p>
-      <!-- end if-else -->
     </div>
   </footer>
 </body>
