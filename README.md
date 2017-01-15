@@ -1,7 +1,30 @@
-# Sofya
-## Theme for Hugo
+# Sofya: a Theme for Hugo
 
-To Do:
+A minimalist theme for Hugo (static site generator).
+
+**(Add an example URL in here)**
+
+## Motivation
+
+I was unable to find a theme that incompassed all of the design elements that I wanted for my blog, so I created my own. I was, however, inspired by the following designs:
+
+* http://hbpasti.github.io/heather-hugo/
+* http://motherfuckingwebsite.com/
+* http://bettermotherfuckingwebsite.com/
+* http://lessmade.com/themes/less/
+* http://www.goldsborough.me/
+
+Some of the base styles are also from: http://hbpasti.github.io/heather-hugo/
+
+## Installation
+
+**(Add getting started text here)**
+
+## License
+
+A short snippet describing the license (MIT, Apache, etc.)
+
+## To Do:
 * ~~Ensure the template doesn’t break when you remove all the content.~~
 * ~~Complete basic footer.~~
 * ~~Add social media icons.~~
@@ -10,13 +33,3 @@ To Do:
 * Add documentation.
 * Implement MathJax.
 * Implement code snippets.
-
-Inspired by:
-* http://hbpasti.github.io/heather-hugo/
-* http://motherfuckingwebsite.com/
-* http://bettermotherfuckingwebsite.com/
-* http://lessmade.com/themes/less/page/2/
-* http://www.goldsborough.me/
-
-Base CSS from http://hbpasti.github.io/heather-hugo/
-
