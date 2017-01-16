@@ -20,23 +20,28 @@ Some of the base styles have been lifted from: http://hbpasti.github.io/heather-
 
 In order to get started with this theme, create a new hugo site:
 
-  `hugo new site helloworld`
+  ```hugo new site helloworld
+  ```
 
 Navigate to the themes directory:
 
-  `cd helloworld/themes`
+  ```cd helloworld/themes
+  ```
 
 Download and extract or clone in the theme:
 
-  `git clone https://github.com/jonathondilworth/sofya.git`
+  ```git clone https://github.com/jonathondilworth/sofya.git
+  ```
 
 Update the theme in the site config.toml file:
 
-  `theme = "sofya"`
+  ```theme = "sofya"
+  ```
 
 Here is an example config.toml file:
 
-  `<<INSERT EXAMPLE FILE HERE>>`
+  ```<<INSERT EXAMPLE FILE HERE>>
+  ```
 
 **(Add getting started text here)**
 
