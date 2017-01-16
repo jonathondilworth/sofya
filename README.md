@@ -14,22 +14,50 @@ I was unable to find a theme that incompassed all of the design elements that I 
 * http://lessmade.com/themes/less/
 * http://www.goldsborough.me/
 
-Some of the base styles are also from: http://hbpasti.github.io/heather-hugo/
+Some of the base styles have been lifted from: http://hbpasti.github.io/heather-hugo/
 
 ## Installation
 
+In order to get started with this theme, create a new hugo site:
+
+  hugo new site helloworld
+
+Navigate to the themes directory:
+
+  cd helloworld/themes
+
+Download and extract or clone in the theme:
+
+  git clone https://github.com/jonathondilworth/sofya.git
+
+Update the theme in the site config.toml file:
+
+  theme = "sofya"
+
+Here is an example config.toml file:
+
+  <<INSERT EXAMPLE FILE HERE>>
+
 **(Add getting started text here)**
+
+## Roadmap (todo):
+* ~~Complete basic layout.~~
+* ~~Ensure the template does not collapse when the content is removed.~~
+* ~~Add footer with social media icons.~~
+* ~~Add basic media queries to ensure the site is responsive.~~
+* Add webkit references (CSS) to aid compatibility within older browsers.
+* ~~Integrate design into a usable Hugo (https://gohugo.io/) template.~~
+* README documentation.
+  * Installation Text.
+  * Example website.
+  * Update to dos to roadmap.
+* Update theme.toml.
+* Dynamic pages to populate nav bar.
+* New .ICO.
+* Taxonomies (tags).
+* Implement MathJax.
+* Implement code snippets.
 
 ## License
 
-A short snippet describing the license (MIT, Apache, etc.)
-
-## To Do:
-* ~~Ensure the template doesn’t break when you remove all the content.~~
-* ~~Complete basic footer.~~
-* ~~Add social media icons.~~
-* ~~Add media queries to ensure the site is responsive.~~
-* Ensure that webkit is integrated in, as older browsers will need a web-kit reference for flex box.
-* Add documentation.
-* Implement MathJax.
-* Implement code snippets.
+MIT License http://opensource.org/licenses/MIT
