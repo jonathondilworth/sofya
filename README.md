@@ -48,8 +48,6 @@ Here is an example config.toml file:
   <<INSERT EXAMPLE FILE HERE>>
   ```
 
-**(Add getting started text here)**
-
 ## Roadmap (todo):
 * ~~Complete basic layout.~~
 * ~~Ensure the template does not collapse when the content is removed.~~
@@ -58,15 +56,18 @@ Here is an example config.toml file:
 * Add webkit references (CSS) to aid compatibility within older browsers.
 * ~~Integrate design into a usable Hugo (https://gohugo.io/) template.~~
 * README documentation.
-  * Installation Text.
+  * ~~Installation Text.~~
   * Example website.
   * Update to dos to roadmap.
-* Update theme.toml.
-* Dynamic pages to populate nav bar.
+* ~~Update theme.toml.~~
+* ~~Dynamic pages to populate nav bar.~~
+* Reference a URL from .Site.Params for the about me image.
 * New .ICO.
 * Taxonomies (tags).
 * Implement MathJax.
 * Implement code snippets.
+
+^^ change this roadmap to be more summerised and contain references to features on Hugo's doc pages.
 
 ## License
 
