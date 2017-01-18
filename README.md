@@ -85,6 +85,8 @@ baseURL = "https://jonathondilworth.github.io/sofya-example/"
 * Taxonomies / tags.
 * Syntax highlighting / code snippets.
 * MathJax.
+* Comments for posts (disqus).
+* Gravatar integration on about page.
 
 ## License
 
