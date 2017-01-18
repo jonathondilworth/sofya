@@ -2,7 +2,7 @@
 
 A minimalist theme for Hugo (static site generator).
 
-**(Add an example URL in here)**
+See a [working example here](https://jonathondilworth.github.io/sofya-example/).
 
 ## Motivation
 
@@ -18,35 +18,65 @@ Some of the base styles have been lifted from: http://hbpasti.github.io/heather-
 
 ## Installation
 
-In order to get started with this theme, create a new hugo site:
+To get started with this theme, create a new hugo site:
 
-  ```
-  hugo new site helloworld
-  ```
+```
+hugo new site helloworld
+```
 
 Navigate to the themes directory:
 
-  ```
-  cd helloworld/themes
-  ```
+```
+cd helloworld/themes
+```
 
-Download and extract or clone in the theme:
+Clone in (or download & extract) the theme:
 
-  ```
-  git clone https://github.com/jonathondilworth/sofya.git
-  ```
+```
+git clone https://github.com/jonathondilworth/sofya.git
+```
 
-Update the theme in the site config.toml file:
+Update the theme parameter within the site's config.toml:
 
-  ```
-  theme = "sofya"
-  ```
+```
+theme = "sofya"
+```
 
 Here is an example config.toml file:
 
-  ```
-  <<INSERT EXAMPLE FILE HERE>>
-  ```
+```
+title = "My Blog"
+languageCode = "en-us"
+theme = "sofya"
+baseURL = "https://jonathondilworth.github.io/sofya-example/"
+
+[author]
+  name = "Jonathon Dilworth"
+  homepage = "http://jonathondilworth.github.io/sofya-example/"
+
+[params]
+  desc = "Example Desc"
+  displaymenu = true
+  twitter = "https://twitter.com/"
+  github = "https://github.com/"
+  quora = "https://www.quora.com/"
+  linkedin = "https://linkedin.com/"
+  stackoverflow = "http://stackoverflow.com/"
+
+[[menu.main]]
+    name = "home"
+    pre = ""
+    weight = -110
+    identifier = "home"
+    url = "/"
+
+[[menu.main]]
+    name = "about"
+    pre = ""
+    weight = -100
+    identifier = "about"
+    url = "/about/"
+```
 
 ## Feature Roadmap:
 * ~~Social Media Links.~~
