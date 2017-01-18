@@ -48,26 +48,13 @@ Here is an example config.toml file:
   <<INSERT EXAMPLE FILE HERE>>
   ```
 
-## Roadmap (todo):
-* ~~Complete basic layout.~~
-* ~~Ensure the template does not collapse when the content is removed.~~
-* ~~Add footer with social media icons.~~
-* ~~Add basic media queries to ensure the site is responsive.~~
-* Add webkit references (CSS) to aid compatibility within older browsers.
-* ~~Integrate design into a usable Hugo (https://gohugo.io/) template.~~
-* README documentation.
-  * ~~Installation Text.~~
-  * Example website.
-  * Update to dos to roadmap.
-* ~~Update theme.toml.~~
+## Feature Roadmap:
+* ~~Social Media Links.~~
+* ~~Responsive site / media queries.~~
 * ~~Dynamic pages to populate nav bar.~~
-* Reference a URL from .Site.Params for the about me image.
-* New .ICO.
-* Taxonomies (tags).
-* Implement MathJax.
-* Implement code snippets.
-
-^^ change this roadmap to be more summerised and contain references to features on Hugo's doc pages.
+* Taxonomies / tags.
+* Syntax highlighting / code snippets.
+* MathJax.
 
 ## License
 
