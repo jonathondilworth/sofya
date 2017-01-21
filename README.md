@@ -78,12 +78,15 @@ baseURL = "https://jonathondilworth.github.io/sofya-example/"
     url = "/about/"
 ```
 
+## Notes
+
+You can achieve syntax highlighting through using [pygments](http://pygments.org/), as explained [here](https://gohugo.io/extras/highlighting/).
+
 ## Feature Roadmap:
 * ~~Social Media Links.~~
 * ~~Responsive site / media queries.~~
 * ~~Dynamic pages to populate nav bar.~~
 * Taxonomies / tags.
-* Syntax highlighting / code snippets.
 * MathJax.
 * Comments for posts (disqus).
 * Gravatar integration on about page.
