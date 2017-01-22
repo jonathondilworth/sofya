@@ -140,7 +140,11 @@ body {
 }
 
 .post p {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
+}
+
+.post pre {
+  margin-bottom: 32px;
 }
 
 .post h2 {
